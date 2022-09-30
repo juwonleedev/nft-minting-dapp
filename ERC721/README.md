@@ -15,7 +15,7 @@ Hardhat
 6. 터미널 ERC721 디렉토리에 mkdir test 
 7. 터미널 ERC721 디렉토리에 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-etherscan
 8. 터미널 ERC721 디렉토리에 npx hardhat compile 
-9. scripts 디렉토리에 deploy.js 생성 ( https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 completed branch의 deploy.js 파일 복사해서 붙여넣기)
+9. scripts 디렉토리에 deploy.js 생성 ( https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 deploy.js 파일 복사해서 붙여넣기)
 10. hardhat deploy : 터미널 ERC721 디렉토리에 npx hardhat run --network goerli scripts/deploy.js
 - 성공한다면 Address가 Contract address
 : 0xFB58136421ce2af9c5255d98ddc349E885277fA0 이렇게 출력되고 이 주소를 기록
