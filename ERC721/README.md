@@ -14,7 +14,10 @@ Hardhat
 5. 터미널 ERC721 디렉토리에 mkdir scripts
 6. 터미널 ERC721 디렉토리에 mkdir test 
 7. 터미널 ERC721 디렉토리에 npm install --save-dev @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers ethers @nomiclabs/hardhat-etherscan
+7. hardhat.config.js 내용 지우고 https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 hardhat.config.js 파일 복사해서 붙여넣기 
 8. 터미널 ERC721 디렉토리에 npx hardhat compile 
+- Error HH12: Trying to use a non-local installation of Hardhat, which is not supported.
+Please install Hardhat locally using npm or Yarn, and try again. -> npm install hardhat으로 해결 
 9. scripts 디렉토리에 deploy.js 생성 ( https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 deploy.js 파일 복사해서 붙여넣기)
 10. hardhat deploy : 터미널 ERC721 디렉토리에 npx hardhat run --network goerli scripts/deploy.js
 - 성공한다면 Address가 Contract address
