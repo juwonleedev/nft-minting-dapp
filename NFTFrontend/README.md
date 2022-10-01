@@ -12,8 +12,10 @@ React, ethers.js
 
 1. cd NFTFrontend 통해 NFTFrontend 디렉토리로 이동
 2. 터미널을 열고 NFTFrontend 디렉토리에서 npm install을 실행
-3. npm start를 통해 리액트 프론트엔드를 확인할 수 있는 로컬 서버 띄우기
-4. App.js의 내용 없애기
-5. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 NFT.json를 src에 복사해서 붙여넣기
-6. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 App.js를 복사해서 붙여넣고, 해당 파일의 주석을 통해 기능 확인
-- 버튼밖에 없기 때문에, chrome browser의 f12 > console에서 각 버튼들을 누르며 실행 결과를 확인하십시오
+4. 터미널을 열고 NFTFrontend 디렉토리에서 npm install --save ethers
+- https://docs.ethers.io/v5/getting-started/#installing  
+5. npm start를 통해 리액트 프론트엔드를 확인할 수 있는 로컬 서버 띄우기
+6. App.js의 내용 없애기
+7. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 NFT.json를 src에 복사해서 붙여넣기
+8. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 App.js를 복사해서 붙여넣고, 해당 파일의 주석을 통해 기능 확인
+- 버튼밖에 없기 때문에, chrome browser의 f12 > console에서 각 버튼들을 누르며 실행 결과를 확인하십시오 
