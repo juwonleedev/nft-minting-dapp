@@ -18,3 +18,4 @@ React, ethers.js
 6. App.js의 내용 없애기
 7. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 NFT.json를 src에 복사해서 붙여넣기
 8. https://github.com/juwonleedev/ethereumNFT-Minting-DApp 의 test branch의 App.js를 복사해서 붙여넣고, 해당 파일의 주석을 통해 기능 확인
+- 버튼밖에 없기 때문에, chrome browser의 f12 > console에서 각 버튼들을 누르며 실행 결과를 확인하십시오 
