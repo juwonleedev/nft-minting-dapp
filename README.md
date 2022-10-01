@@ -8,7 +8,7 @@
 ### Goal
 
 - Hardhat을 사용하여 Solidity 스마트 컨트렉트를 이더리움 테스트넷 Goerli에 배포 및 검증해봅시다.
-- React 프레임워크와 web3.js 라이브러리를 사용하여 배포된 스마트 컨트렉트 주소와 json 형식의 abi 파일을 사용하여 NFT Minting DApp을 만들어 봅시다.
+- React 프레임워크와 ethers.js 라이브러리를 사용하여 배포된 스마트 컨트렉트 주소와 json 형식의 abi 파일을 사용하여 NFT Minting DApp을 만들어 봅시다.
 
 ## Guide
 
@@ -22,4 +22,4 @@ Hardhat 사용 테스트넷 Deploy, Verify
 
 ### 3. NFTFrontend
 
-React, web3.js 기반 프론트엔드를 구축하고 NFT 스마트 컨트렉트 주소와 json 형식의 abi를 활용하여 컨트렉트의 정보를 가져오고 (Read) Minting tx을 만들어봅시다 (Write)
+React, ethers.js 기반 프론트엔드를 구축하고 NFT 스마트 컨트렉트 주소와 json 형식의 abi를 활용하여 컨트렉트의 정보를 가져오고 (Read) Minting tx을 만들어봅시다 (Write)
