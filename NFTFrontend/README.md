@@ -2,11 +2,11 @@
 
 ## Goal
 
-React, web3.js 기반 프론트엔드를 구축하고 NFT 스마트 컨트렉트 주소와 json 형식의 abi를 활용하여 컨트렉트의 정보를 가져오고 (Read) Minting tx을 만들어봅시다 (Write)
+React, ethers.js 기반 프론트엔드를 구축하고 NFT 스마트 컨트렉트 주소와 json 형식의 abi를 활용하여 컨트렉트의 정보를 가져오고 (Read) Minting tx을 만들어봅시다 (Write)
 
 ## What we use
 
-React, web3.js
+React, ethers.js
 
 ## Tutorial
 
