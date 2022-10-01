@@ -11,6 +11,7 @@
 - React 프레임워크와 web3.js 라이브러리를 사용하여 배포된 스마트 컨트렉트 주소와 json 형식의 abi 파일을 사용하여 NFT Minting DApp을 만들어 봅시다.
 
 ## Guide
+Main branch는 실습을 위한 튜토리얼을 따라할 수 있는 템플릿이며, test branch는 일부 비공개 정보 (프라이빗 키 등)를 제외한 완성 코드들이 존재합니다.
 
 ### 1. ERC20
 
