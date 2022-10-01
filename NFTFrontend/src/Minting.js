@@ -101,22 +101,37 @@ function Minting () {
 
        // 내가 배포한 컨트렉트 Address
        const contractAddress = "0x6F6fDe1F229c40939a9037BD3aF5A35fB94AE9c6"
-       const Contract = new ethers.Contract(contractAddress, abi, provider);
-       console.log(Contract)
+       // tx을 생성하는 컨트렉트를 만드니까, 마지막 arument에 signer가 들어갑니다
+       const ContractwithSigner = new ethers.Contract(contractAddress, abi, signer);
+       console.log(ContractwithSigner)
 
        // Mint Function
-       // https://docs.ethers.io/v5/getting-started/#getting-started--writing 
-       
-       
+       // https://docs.ethers.io/v5/getting-started/#getting-started--writing  
+       // Contract Interaction: https://docs.ethers.io/v5/api/contract/contract/#Contract  
+       const mintTx = await ContractwithSigner.mint("https://gateway.pinata.cloud/ipfs/QmXs6VnQ3PK4fnpmZuzfHTXo7yDz6TNMmZuxpMkjgDdEdn")
+       console.log("Tx info", mintTx)
+
+       // minting이 된 걸 확인하고 싶다면 https://goerli.etherscan.io/address/자기지갑주소 에서 확인
+       // 저 같은 경우 https://goerli.etherscan.io/address/0xb2a2075E176bF3f052Bab091d18475d996c6Cb77  
+       // 보유한 NFT들의 경우 ERC721 Token txns 에서 확인 가능합니다
     }
+
+    // 프론트엔드에서 refresh, rendering을 하고 싶다면 이벤트를 이용하시면 됩니다
+    // https://docs.ethers.io/v5/getting-started/#getting-started--events 
 
     return (
         <div>
+            <h4>Connect Wallet</h4>
             <button onClick={connectWallet} type="button">connect wallet</button>
+            <h4>Get Blockchain Info</h4>
             <button onClick={getBlockchainInfo} type="button">get blockchain info</button>
+            <h4>Get Address Info</h4>
             <button onClick={getAddressInfo} type="button">get address info</button>
+            <h4>Get Contract Info</h4>
             <button onClick={getContractInfo} type="button">get contract info</button>
+            <h4>Send ETH</h4>
             <button onClick={SendETH} type="button">SendETH</button>
+            <h4>Mint</h4>
             <button onClick={Mint} type="button">Mint</button>
         </div>
     );
