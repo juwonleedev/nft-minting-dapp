@@ -36,8 +36,8 @@ function Minting () {
        const signer = provider.getSigner()
        console.log(signer)
 
-       // // Get the balance of an account (by address or ENS name, if supported by network)
-       const rawbalance = await provider.getBalance("0xb2a2075E176bF3f052Bab091d18475d996c6Cb77")
+       // Get the balance of an account (by address or ENS name, if supported by network)
+       const rawbalance = await provider.getBalance("/*잔액을 조회하고 싶은 계정 주소 (퍼블릭키)*/")
        console.log("raw balance", rawbalance)
 
        // Often you need to format the output to something more user-friendly,
@@ -57,7 +57,7 @@ function Minting () {
        console.log(signer)
 
        // 내가 배포한 컨트렉트 Address
-       const contractAddress = "0x6F6fDe1F229c40939a9037BD3aF5A35fB94AE9c6"
+       const contractAddress = "/*내가 배포한 컨트렉트 주소*/"
        const Contract = new ethers.Contract(contractAddress, abi, provider);
        console.log(Contract)
 
@@ -83,7 +83,7 @@ function Minting () {
         // https://docs.ethers.io/v5/getting-started/#getting-started--sending 
 
         const tx = signer.sendTransaction({
-            to: "0xD2598507b88b6514d27Cc10e80F8e58848C4245d",
+            to: "/*ETH를 전송할 계정 주소 (Public Key)*/",
             value: ethers.utils.parseEther("0.0001")
         });
 
@@ -100,7 +100,7 @@ function Minting () {
        console.log(signer)
 
        // 내가 배포한 컨트렉트 Address
-       const contractAddress = "0x6F6fDe1F229c40939a9037BD3aF5A35fB94AE9c6"
+       const contractAddress = "/*내가 배포한 컨트렉트 주소*/"
        // tx을 생성하는 컨트렉트를 만드니까, 마지막 arument에 signer가 들어갑니다
        const ContractwithSigner = new ethers.Contract(contractAddress, abi, signer);
        console.log(ContractwithSigner)
